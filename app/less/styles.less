@@ -1,0 +1,629 @@
+@import "variables.less";
+@import "mixins.less";
+
+/*
+  NAVIGATION
+  1.0 GLOBAL
+  2.0 HEADER
+  3.0 BANNER
+  4.0 SUBSCRIPTION
+  5.0 SPECIAL OFFER
+  6.0 FOOTER
+*/
+
+//1.0 GLOBAL
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #47525d;
+  font-weight: normal;
+  line-height: 26px;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-size: 31px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+img {                 // правило для адаптирования больших изображений
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+// 2.0 HEADER
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  border: none;
+}
+
+
+// 3.0 BANNER
+.banner {
+  border-top: 2px solid rgba(183, 173, 173, .2);
+}
+
+.banner-bg {
+  background-color: #f7f7f7;
+  background-image: url(../../img/banner.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  top: 52px;
+  width: 100%;
+}
+
+.banner-header {
+  width: 450px;
+  max-width: 520px;
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+
+.banner-footer {
+  margin-top: 50px;
+  padding-left: 60px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  .btn-baner {
+    background-color: #0071e0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 44px;
+    &:hover {
+      background-color: #3398ea;
+    }
+    a {
+    padding: 14px 40px;
+    color: #fff;
+    &:hover{
+     text-decoration: none;
+    }
+   }
+  }
+}
+
+.banner-footer-link {
+  a {
+    text-decoration: underline;
+    color: #0071e0;
+  }
+}
+
+// 4.0 SUBSCRIPTION
+.subscription-bg {
+  background-color: #323a45;
+}
+
+.subscription-header {
+  padding-top: 160px;
+  margin-bottom: 55px;
+}
+
+.subscription-h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.subscription-form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subscription-form input {
+  font-size: 18px;
+  color: #8a959e;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  margin: 0 2px;
+  box-sizing: border-box;
+  height: 46px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  &[type="submit"] {
+    padding: 3px 15px;
+    background: #ff3366;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    line-height: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: background 0.3s;
+       -moz-transition: background 0.3s;
+         -o-transition: background 0.3s;
+            transition: background 0.3s;
+    &:hover {
+      background: #f42156;
+    }
+  }
+}
+
+.user-name {
+  background-image: url('../../img/subscription_sprites.png');
+  background-position: 3px -466px;
+}
+
+.user-email {
+  background-image: url('../../img/subscription_sprites.png');
+  background-position: 3px -378px;
+}
+
+.user-password {
+  background-image: url('../../img/subscription_sprites.png');
+  background-position: 3px -422px;
+}
+
+.subscription-footer {
+  font-size: 12px;
+  color: #747c83;
+  line-height: 1.8em;
+  text-align: center;
+  padding-bottom: 160px;
+  padding-top: 20px;
+  a {
+    color: #747c83;
+    text-decoration: underline;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+// ==== Message Warning & Access block
+.access-massage {
+  margin-top: @accessMassageMarginTop;
+  margin-bottom: @accessMassageMarginBottom;
+  padding-left: @accessMassagePaddingLeft;
+  background-color: @accessMassageBackgroundColor;
+  border: 1px solid @accessMassageBorderColor;
+  border-radius: @accessMassageBorderRadius;
+  .btn-shadow();
+  p {
+    margin: 10px;
+  }
+}
+
+
+
+// 5.0 SPECIAL OFFER
+.special-offer .row {
+  overflow: hidden;
+}
+
+.special-offer .col-md-4 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.special-offer a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 40, 40, 0.8);
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.special-offer-h3 {
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+  margin: 0;
+
+}
+
+.special-offer-h4 {
+    margin-top: 0;
+    padding-top: 130px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a4a5a6;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+
+}
+
+.special-offer-1 {
+  background-image: url(../../img/eve_valkyrie.jpg);
+  .special-offer-settings();
+}
+
+.special-offer-2 {
+  background-image: url(../../img/luckys_tale.jpg);
+  .special-offer-settings();
+}
+
+.special-offer-3 {
+  background-image: url(../../img/touch.jpg);
+  .special-offer-settings();
+}
+
+
+// 6.0 FOOTER
+.footer-settings {
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 400;
+  letter-spacing: normal;
+  background-color: #f2f2f2;
+  color: #666;
+}
+
+.footer-content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-header-message {
+  border-bottom: 1px solid #e3e3e3;
+  color: #999;
+  padding: 16px 0 11px;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.apple-review-row {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.logo-apple {
+  padding-top: 2px;
+}
+
+.apple-review {
+  padding-left: 10px;
+  display: inline-flex;
+  span {
+    padding-left: 10px;
+  }
+  &:before {
+    content: ">";
+    display: block;
+    color: #d6d6d6;
+  }
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    a {
+      color: #333;
+      font-weight: 400;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer-h3 {
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-contact-reseller {
+  padding-top: 20px;
+  border-bottom: 1px solid #e3e3e3;
+  a {
+    color: #08c;
+    &:hover {
+      color: #333;
+      text-decoration: underline;
+    }
+  }
+}
+
+.copyright-row {
+  padding-top: 5px;
+}
+
+.lang-img {
+  background-image: url(../../img/flag_ru.png);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+}
+
+.lang-country {
+  color: #666;
+  padding-left: 20px;
+  &:hover {
+    color: #333;
+    text-decoration: underline;
+  }
+}
+
+.footer-legal-link {
+  a {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 400;
+    letter-spacing: normal;
+    padding-right: 12px;
+    margin-right: 10px;
+    display: inline-flex;
+    border-right: 1px solid #d6d6d6;
+    &:hover {
+      color: #333;
+    }
+    &:last-child{
+      border:none;
+      margin:0;
+      padding:0;
+    }
+  }
+}
+
+
+/* X.0 MEDIA RESPONSIVE STYLE */
+
+/* Start Large devices .col-lg- (Very large desktops, 2560px and up) */
+@media (min-width: 2560px) {
+  // 2.0 HEADER
+  .logo-brand {
+    width: 65%;
+  }
+
+  .custom-navbar-form {
+    margin-left: 300px;
+  }
+
+
+  // 6.0 FOOTER
+  .footer-content-wrapper {
+    width: 70%;
+  }
+
+} /* End Large devices .col-lg- (Very large desktops, 2560px and up) */
+
+
+/* Start Large devices .col-lg- (Full HD large desktops, 2560px and up) */
+@media (min-width: 1920px) and (max-width: 2559px) {
+  // 2.0 HEADER
+  .logo-brand {
+    width: 65%;
+  }
+
+  .custom-navbar-form {
+    margin-left: 300px;
+  }
+
+
+  // 6.0 FOOTER
+  .footer-content-wrapper {
+    width: 70%;
+  }
+
+} /* End Large devices .col-lg- (Full HD large desktops, 1920px and up) */
+
+
+/* Start Large devices .col-lg- (large desktops, 1200px and up) */
+@media (min-width: 1200px)  and (max-width: 1919px) {
+  // 2.0 HEADER
+  .logo-brand {
+    width: 70%;
+  }
+
+  .custom-navbar-form {
+    margin-left: 300px;
+  }
+
+  // 3.0 BANNER
+  .banner-bg {
+    background-position: center right;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 100;
+    width: 330px;
+    margin-top: 50px;
+  }
+
+  // 4.0 SUBSCRIPTION
+  .subscription-form input {
+    width: 230px;
+    &[type="submit"] {
+      padding: 3px 3px;
+    }
+  }
+
+
+} /* End Large devices .col-lg- (large desktops, 1200px and up) */
+
+
+
+
+
+/* Start Medium devices .col-md- (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  // 2.0 HEADER
+  .logo-brand {
+    width: 70%;
+  }
+
+  .custom-navbar-form {
+    margin-left: 100px;
+  }
+
+
+  // 3.0 BANNER
+  .banner-bg {
+    background-size: contain;
+    background-position: 375px center;
+  }
+
+  // 4.0 SUBSCRIPTION
+  .subscription-form input {
+    width: 230px;
+    &[type="submit"] {
+      padding: 3px 3px;
+    }
+  }
+
+
+
+} /* End Medium devices .col-md- (desktops, 992px and up) */
+
+
+
+
+
+/* Start Small devices .col-sm- (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  // 2.0 HEADER
+  .logo-brand {
+    width: 70%;
+  }
+
+  .navbar-form {
+    padding: 0;
+    .form-group input {
+    width: 110px;
+   }
+  }
+
+  // 3.0 BANNER
+  .banner-bg {
+    background-size: contain;
+    background-position: 340px center;
+  }
+
+
+  // 4.0 SUBSCRIPTION
+  .subscription-header {
+    padding-top: 70px;
+  }
+
+  .subscription-form {
+    text-align: center;
+  }
+
+  .subscription-footer {
+    padding-bottom: 70px;
+  }
+
+
+} /* End Small devices .col-sm- (tablets, 768px and up) */
+
+
+
+
+/* Start Extra small devices .col-xs- (phones,320px and up) */
+@media (min-width: 320px) and (max-width: 767px) {
+  // 2.0 HEADER
+  .logo-brand {
+    width: 65%;
+  }
+  // 3.0 BANNER
+  .banner-bg {
+    background-image: none;
+  }
+
+  .banner-header {
+    width: 100%;
+    margin:0;
+  }
+
+  .banner-footer {
+    margin-top: 50px;
+    padding-left: 5px;
+    margin-bottom: 0;
+    font-size: 16px;
+    .btn-baner {
+      height: 100%;
+    }
+  }
+
+  // 4.0 SUBSCRIPTION
+  .subscription-header {
+    padding-top: 40px;
+  }
+
+  .subscription-form input {
+    width: 280px;
+  }
+
+  .subscription-footer {
+    padding-bottom: 40px;
+  }
+
+
+
+} /* End Extra small devices .col-xs- (phones,320px and up) */
+
+
+
+
+.custom-menu {
+  border-bottom: 1px solid #000;
+}
+
+.custom-menu li {
+  position: relative;
+}
+
+.custom-menu a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 5px;
+  transition: all 1s ease-out 0.5s;               /* Время и способ анимации */
+
+}
+
+.custom-menu li ul {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  right: -100px;
+  width: 100px;
+  top: 0;
+  border-bottom: 1px solid #000;
+  transition: all 1s ease-out 0.5s;               /* Время и способ анимации */
+}
+
+
+
+.custom-menu li:hover ul {
+  display: block;
+  opacity: 1;
+}
+
+.custom-menu a:hover {
+  color: #2160d0;
+  background-color: #e8de5e;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ciklum Internship JS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Совместимость Бутстрап для последней версии ИЕ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Активация адаптивности Бутстрап -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">   <!-- Подключение стилей Бутстрапа -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- include: "type": "css", "files": "css/**/*.css" -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- Подключение Бутстрап для ИЕ-8 и выше -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="header">
+      <!-- Navbar -->
+      <div class="container">
+       <div class="navbar navbar-default navbar-custom" role="navigation">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#"><img class="logo-brand" src="../img/logo_microsoft.png" alt="logo_microsoft" /></a>
+         </div>
+         <div class="navbar-collapse collapse">
+
+           <!-- Left nav -->
+           <ul class="nav navbar-nav">
+             <li><a href="#">Продукты <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li><a href="#">ПО и услуги<span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Skype</a></li>
+                   </ul>
+                 </li>
+                 <li><a href="#">Устройства и Xbox<span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Аксессуары для ПК</a></li>
+                     <li><a href="#">Xbox и игры</a></li>
+                   </ul>
+                 </li>
+                 <li><a href="#">Для бизнеса<span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Microsoft Azure</a></li>
+                     <li><a href="#">Microsoft Dynamics</a></li>
+                     <li><a href="#">Office для бизнеса</a></li>
+                     <li><a href="#">Skype для бизнеса</a></li>
+                     <li><a href="#">Решения для малого бизнеса</a></li>
+                     <li><a href="#">Найти поставщика решений</a></li>
+                   </ul>
+                 </li>
+                 <li><a href="#">Для разработчиков и ИТ-специалистов<span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Microsoft Azure</a></li>
+                     <li><a href="#">TechNet</a></li>
+                     <li><a href="#">Visual Studio</a></li>
+                   </ul>
+                 </li>
+                 <li><a href="#">Для учащихся и преподавателей<span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Купить компьютеры и планшеты: оптимально для студентов</a></li>
+                   </ul>
+                 </li>
+               </ul>
+             </li>
+             <li><a href="#">Поддержка <span class="sr-only">(current)</span></a></li>
+           </ul>
+           <form class="navbar-form navbar-left custom-navbar-form" role="search">
+             <div class="form-group">
+               <input type="text" class="form-control" placeholder="Поиск">
+             </div>
+             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+           </form>
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+             <li><a href="#">Войти</a></li>
+           </ul>
+         </div><!--/.nav-collapse -->
+       </div>
+     </div>
+    </section>
+
+    <section class="banner banner-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 banner-header">
+            <h1>Безопасный доступ, синхронизация и совместная работа</h1>
+            <h2>Хранение и безопасный доступ к данным — аккаунты Dropbox Business пользуются доверием у системных администраторов и нравятся пользователям.</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 banner-footer">
+            <button class="btn-baner" type="button" name="button">
+              <a href="#">Попробуйте бесплатную 30-дневную ознакомительную версию</a>
+            </button>
+            <div class="banner-footer-link">или <a href="#">купите прямо сейчас</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription subscription-bg">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-md-12 subscription-header">
+            <h1 class="subscription-h1">Join over 2 million designers already using InVision. Get InVision <strong>free</strong> forever!</h1>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <form class="subscription-form" name="subForm" novalidate="novalidate" data-id="subForm" method="post">
+
+                  <div class="form-group pull-left">
+                    <input id="name" name="name" class="user-name" type="text" value="" maxlength="50" required placeholder="Your Name">
+                  </div>
+                  <div class="form-group pull-left">
+                    <input id="email" name="email" class="user-email" type="email" value="" maxlength="50" required placeholder="Email Address">
+                  </div>
+                  <div class="form-group pull-left">
+                    <input id="password" name="password" class="user-password" type="password" value="" maxlength="50" required placeholder="Create a Password">
+                  </div>
+
+                  <input type="submit" value="Get Started — Free Forever!">
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div data-id="accessSubmissionFormSubscription" class="access-massage text-center hidden">
+                  <p>Вы успешно подписались на InVision</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 subscription-footer">
+            <p>
+              By clicking "Get Started — Free Forever!" I agree to InVision's Terms of Service. <a href="#">Terms of Service.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="special-offer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 special-offer-1">
+            <a href="https://www3.oculus.com/en-us/rift/#eve-valkyrie" target="_blank">
+              <h4 class="special-offer-h4">Featured Content</h4>
+              <h3 class="special-offer-h3">EVE: Valkyrie</h3>
+            </a>
+          </div>
+          <div class="col-md-4 special-offer-2">
+            <a href="https://www3.oculus.com/en-us/rift/#luckys-tale"  target="_blank">
+              <h4 class="special-offer-h4">Included with all Rift Purchases</h4>
+              <h3 class="special-offer-h3">Lucky's Tale</h3>
+            </a>
+          </div>
+          <div class="col-md-4 special-offer-3">
+            <a href="https://www3.oculus.com/en-us/blog/over-30-full-games-launching-with-oculus-touch-this-year/" target="_blank">
+              <h4 class="special-offer-h4">Featured Story</h4>
+              <h3 class="special-offer-h3">Over 30 Full Games Launching with Oculus Touch this Year</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container-fluid footer-settings">
+        <div class="footer-content-wrapper">
+          <div class="row footer-header-message">
+            <p>
+              Функции могут быть изменены. Некоторые функции могут быть доступны не во всех регионах и не на всех языках.
+            </p>
+          </div>
+          <div class="row apple-review-row">
+            <a class="logo-apple pull-left" href="#"><img src="../img/apple.png" alt="logo apple" /></a>
+            <div class="apple-review">
+              <span>Обзор watchOS 3</span>
+            </div>
+          </div>
+          <div class="row footer-nav">
+            <div class="col-sm-6 col-md-3">
+              <nav>
+                <h3 class="footer-h3">Выбирайте и покупайте</h3>
+                <ul>
+                  <li>
+                    <a href="#">Mac</a>
+                  </li>
+                  <li>
+                    <a href="#">iPad</a>
+                  </li>
+                  <li>
+                    <a href="#">iPhone</a>
+                  </li>
+                  <li>
+                    <a href="#">Watch</a>
+                  </li>
+                  <li>
+                    <a href="#">TV</a>
+                  </li>
+                  <li>
+                    <a href="#">Music</a>
+                  </li>
+                  <li>
+                    <a href="#">iTunes</a>
+                  </li>
+                  <li>
+                    <a href="#">iPod</a>
+                  </li>
+                  <li>
+                    <a href="#">Аксессуары</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <nav>
+                <h3 class="footer-h3">Apple Store</h3>
+                <ul>
+                  <li>
+                    <a href="#">Варианты оплаты</a>
+                  </li>
+                  <li>
+                    <a href="#">Состояние заказа</a>
+                  </li>
+                  <li>
+                    <a href="#">Помощь при покупке</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <div class="row">
+                <div class="col-md-12">
+                  <nav>
+                    <h3 class="footer-h3">Для образования</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Apple в образовании</a>
+                      </li>
+                      <li>
+                        <a href="#">Купите для вуза</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-md-12">
+                  <nav>
+                    <h3 class="footer-h3">Для бизнеса</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Apple в бизнесе</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <div class="row">
+                <div class="col-md-12">
+                  <nav>
+                    <h3 class="footer-h3">Учётная запись</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Управление вашим Apple ID</a>
+                      </li>
+                      <li>
+                        <a href="#">Учётная запись Apple Store</a>
+                      </li>
+                      <li>
+                        <a href="#">iCloud.com</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-md-12">
+                  <nav>
+                    <h3 class="footer-h3">Ценности Apple</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Универсальный доступ</a>
+                      </li>
+                      <li>
+                        <a href="#">Окружающая среда</a>
+                      </li>
+                      <li>
+                        <a href="#">Конфиденциальность</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <nav>
+                <h3 class="footer-h3">О компании Apple</h3>
+                <ul>
+                  <li>
+                    <a href="#">Вакансии</a>
+                  </li>
+                  <li>
+                    <a href="#">Информация для прессы</a>
+                  </li>
+                  <li>
+                    <a href="#">Гарантия</a>
+                  </li>
+                  <li>
+                    <a href="#">Презентации</a>
+                  </li>
+                  <li>
+                    <a href="#">Контактная информация</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row footer-contact-reseller">
+            <p>
+               О возможных способах покупки узнайте по телефону 8-800-333-51-73 или
+               <a href="#">найдите реселлера</a>
+            </p>
+          </div>
+          <div class="row copyright-row">
+            <div class="col-md-10">
+              <p>
+                © Apple Inc., 2016 г. Все права защищены.
+              </p>
+            </div>
+            <div class="col-md-2">
+              <a href="#">
+                <div class="lang-img pull-left">
+
+                </div>
+                <div class="lang-country">Россия</div>
+              </a>
+            </div>
+          </div>
+          <div class="row footer-legal-link">
+            <div class="col-md-12 pull-left">
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Использование cookies</a>
+              <a href="#">Условия использования</a>
+              <a href="#">Продажа и возврат</a>
+              <a href="#">Юридическая информация</a>
+              <a href="#">Карта сайта</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Подключение библиотеки jQuery -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="../bootstrap/js/bootstrap.js"></script>
+
+    <!-- include: "type": "js", "files": "app/**/load_first/*.js" -->
+    <!-- include: "type": "js", "files": "app/**/load_second/*.js" -->
+  </body>
+</html>
